@@ -1,0 +1,31 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header {
+  display: flex;
+  border-bottom: 5px #E0354B solid;
+}
+
+.App-header h1 {
+  color: #E0354B;
+  align-self: center;
+  font-weight: bold;
+}
+
+.App-header img {
+  width: 300px;
+}
+
+/* .App-body {
+  min-height: 100vh;
+} */
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 5px #E0354B solid;
+  font-style: italic;
+  text-align: center;
+  width: 99%;
+}
