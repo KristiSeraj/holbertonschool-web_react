@@ -5,16 +5,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <header className="App-header">
         <img src={logo} className="logo" alt="Holberton logo" />
         <h1>School dashboard</h1>
-      </div>
+      </header>
       <div className="App-body">
         <p>Login to access the full dashboard</p>
       </div>
-      <div className="App-footer">
+      <footer className="App-footer">
         <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p>
-      </div>
+      </footer>
     </div>
   );
 }
