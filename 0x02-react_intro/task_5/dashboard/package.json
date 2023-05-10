@@ -2,11 +2,11 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production --config config/webpack.config.js",
-    "start": "webpack server --open --mode development --config config/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open --mode development --config config/webpack.config.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -23,10 +23,13 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.1",
     "image-webpack-loader": "^8.1.0",
     "inline-source-map": "^0.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "style-loader": "^3.3.2"
+    "react-scripts": "^5.0.1",
+    "style-loader": "^3.3.2",
+    "web-vitals": "^3.3.1"
   }
 }
