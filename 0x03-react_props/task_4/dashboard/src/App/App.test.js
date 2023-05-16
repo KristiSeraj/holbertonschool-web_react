@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Notification from '../Notifications/Notification';
 import Login from '../Login/Login';
+import CourseList from '../CourseList/CourseList';
 
 
 describe('Testing <App /> component', () => {
@@ -39,6 +40,20 @@ describe('Testing <App /> component', () => {
             const wrapper = shallow(<App />);
             wrapper.update()
             expect(wrapper.exists(Footer)).toEqual(true);
+        });
+    });
+    describe('Test CourseList component', () => {
+        it ('It should not display CourseList when isLoggedIn false by default', () => {
+            const wrapper = shallow(<App />);
+            wrapper.update()
+            expect(wrapper.exists(CourseList)).toEqual(false); 
+        });
+    });
+    describe('Test CourseList component', () => {
+        it ('It should display CourseList when isLoggedIn true', () => {
+            const wrapper = shallow(<App isLoggedIn={true} />);
+            wrapper.update()
+            expect(wrapper.exists(CourseList)).toEqual(true); 
         });
     });
 })
