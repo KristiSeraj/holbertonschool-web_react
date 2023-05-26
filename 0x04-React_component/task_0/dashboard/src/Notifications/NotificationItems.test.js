@@ -1,6 +1,6 @@
 import { shallow, mount } from 'enzyme';
 import NotificationItem from './NotificationItem';
-
+import React from 'react';
 
 describe('Testing <NotificationItem /> component', () => {
     describe('NotificationItem renders without crashing', () => {

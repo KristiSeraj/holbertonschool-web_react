@@ -1,4 +1,5 @@
 import { shallow } from 'enzyme';
+import React from 'react';
 import App from './App';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';

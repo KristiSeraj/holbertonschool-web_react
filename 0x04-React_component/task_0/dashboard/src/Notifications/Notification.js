@@ -1,9 +1,9 @@
 import React from 'react';
-import './Notification.css';
-import closeIcon from '../assets/close-icon.png';
 import NotificationItem from './NotificationItem';
 import PropTypes from 'prop-types';
 import NotificationItemShape from './NotificationItemShape';
+import "./Notification.css";
+import closeIcon from "../assets/close-icon.png";
 
 function Notification({ displayDrawer, listNotifications }) {
     const handledClick = () => {
