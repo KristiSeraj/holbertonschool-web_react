@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function CourseListRow({ isHeader, textFirstCell, textSecondCell}) {
+    const color = {
+        backgroundColor: '#f5f5f5ab'
+    };
     return (
         <tr>
             {isHeader ? (
@@ -14,8 +17,8 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell}) {
                 )
             ) : (
                 <>
-                    <td style={{ backgroundColor: '#f5f5f5ab' }}>{textFirstCell}</td>
-                    <td style={{ backgroundColor: '#f5f5f5ab' }}>{textSecondCell}</td>
+                    <td style={color}>{textFirstCell}</td>
+                    <td style={color}>{textSecondCell}</td>
                 </>
             )}
         </tr>
