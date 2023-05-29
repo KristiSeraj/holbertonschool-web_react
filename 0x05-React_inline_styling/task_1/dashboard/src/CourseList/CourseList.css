@@ -1,4 +1,4 @@
-table, thead, tbody {
+thead, tbody {
     border: 1px solid #ddd;
 }
 
@@ -9,9 +9,4 @@ th {
 
 tr:last-of-type {
     text-align: left;
-}
-
-table {
-    width: 80%;
-    margin: 50px auto;
 }

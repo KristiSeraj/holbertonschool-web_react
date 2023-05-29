@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <>
       <Notification listNotifications={listNotifications} />
-      <div className={css(styles.App)}>
+      <div className={css(styles.body)}>
         <Header />
         {isLoggedIn ? (
           <BodySectionWithMarginBottom title="Course list">
@@ -50,7 +50,9 @@ class App extends Component {
         <BodySection title="News from the School">
           <p>Lorem ipsum hello world</p>
         </BodySection>
-        <Footer />
+        <div className={css(styles.footer)}>
+          <Footer />
+        </div>
       </div>
       </>
     )
@@ -58,8 +60,17 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  App: {
+  body: {
     fontFamily: 'Arial, Helvetica, sans-serif'
+  },
+  footer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    position: 'fixed',
+    bottom: 0,
+    borderTop: '5px #E0354B solid',
+    fontStyle: 'italic'
   }
 })
 
