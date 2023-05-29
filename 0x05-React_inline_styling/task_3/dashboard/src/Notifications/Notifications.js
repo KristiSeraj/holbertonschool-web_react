@@ -86,11 +86,6 @@ const styles = StyleSheet.create({
     },
     menuItem: {
         textAlign: 'right'
-    },
-    panel: {
-        '@media only screen and (max-width: 600px)': {
-            zIndex: 999
-        }
     }
 })
 
