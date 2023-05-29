@@ -94,7 +94,7 @@ Notification.propTypes = {
 }
 
 Notification.defaultProps = {
-    displayDrawer: true
+    displayDrawer: false
 }
 
 export default Notification;
