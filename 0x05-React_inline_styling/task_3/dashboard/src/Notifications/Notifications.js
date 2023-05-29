@@ -37,7 +37,7 @@ class Notification extends Component {
                         border: 'none'
                     }} aria-label='Close' onClick={handledClick}><img src={closeIcon} alt='Close icon' className={css(styles.img)}/></button>
                     <p>Here is the list of notifications</p>
-                    <ul style={{ padding: 0 }}>
+                    <ul className={css(styles.ul)}>
                         {listNotifications === 0 && (
                             <Notification type="default" value="No new notification for now" />
                         )}
@@ -55,6 +55,12 @@ class Notification extends Component {
 }
 
 const styles = StyleSheet.create({
+    ul: {
+        '@media only screen and (max-width: 600px)': {
+            padding: 0
+        }
+
+    },
     notification: {
         border: '2px dashed #E0354B',
         padding: 10,
