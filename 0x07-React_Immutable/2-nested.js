@@ -5,7 +5,7 @@ export default function accessImmutableObject(object, array) {
 
   let value = object;
 
-  for (let i = 0; i < array.length; i =+ 1) {
+  for (let i = 0; i < array.length; i += 1) {
     const key = array[i];
     if (value && Object.prototype.hasOwnProperty.call(value, key)) {
       value = value[key];
