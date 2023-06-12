@@ -6,6 +6,6 @@ export function getListObject(array) {
 
 export function addElementToList(list, element) {
   const newList = List(list);
-  const newList2 = newList.push(element)
+  const newList2 = newList.push(element);
   return newList2;
 }
