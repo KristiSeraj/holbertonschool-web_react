@@ -1,13 +1,13 @@
 import { List, Map } from './node_modules/immutable/dist/immutable';
 
 export function concatElements(page1, page2) {
-  const list1 = List([]);
-  const list2 = list1.concat(page1, page2);
-  return list2;
+  const list1 = List(page1);
+  const list2 = List(page2);
+  return list1.concat(list2);
 }
 
 export function mergeElements(page1, page2) {
-  const newMap = Map(page1).mergeDeep(page2);
-  const newList = List(newMap.valueSeq());
-  return newList;
+  const map = Map(page1);
+  const map2 = Map(page2);
+  return map.merge(map2);
 }
