@@ -6,7 +6,7 @@ export default function printBestStudents(obj) {
   const filtered = newSeq.filter((student) => {
     student.firstName.charAt(0).toUpperCase();
     return student.score > 70;
-  })
+  });
 
   function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
