@@ -10,7 +10,7 @@ const map = Map({
 });
 
 const map2 = map.withMutations((mutableMap) => {
-    mutableMap.set(4, 'Oliver').set(2, 'Benjamin');
+  mutableMap.set(4, 'Oliver').set(2, 'Benjamin');
 });
 
 export { map, map2 };
