@@ -1,6 +1,5 @@
 import { uiReducer, initialState} from "./uiReducer";
 import { LOGIN_FAILURE } from "../actions/uiActionTypes";
-import { Map } from 'immutable';
 
 describe('UI Reducer', () => {
     describe('testing state', () => {
