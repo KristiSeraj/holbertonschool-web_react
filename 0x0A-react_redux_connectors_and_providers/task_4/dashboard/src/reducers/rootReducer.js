@@ -10,11 +10,11 @@ export const initialState = {
     ui: Map(initialUiState)
 }
 
-const rootReducer = combineReducers({
+const rootReducer = {
     courses: courseReducer,
     notifications: notificationReducer,
     ui: uiReducer
-});
+};
 
 
 export default rootReducer;
